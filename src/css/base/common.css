@@ -15,6 +15,11 @@ p {
   margin: 0;
 }
 
+a ::before,
+a :after {
+  color: inherit;
+}
+
 ul,
 ol {
   margin: 0;
@@ -32,6 +37,7 @@ button {
   padding: 0;
   border: none;
   font: inherit;
+  cursor: pointer;
 }
 .visually-hidden {
   position: absolute;

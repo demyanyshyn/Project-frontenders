@@ -1,2 +1,11 @@
 @import url(./base/common.css);
+@import url(./base/container.css);
+@import url(./base/colors.css);
 @import url(./layouts/header.css);
+@import url(./layouts/about-us.css);
+@import url(./layouts/advantages.css);
+@import url(./layouts/footer.css);
+@import url(./layouts/hero.css);
+@import url(./layouts/our-yachts.css);
+@import url(./layouts/rent-yacht.css);
+@import url(./layouts/reviews.css);

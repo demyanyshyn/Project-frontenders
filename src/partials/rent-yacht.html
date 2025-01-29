@@ -1,0 +1,68 @@
+<section class="section rent-a-yacht" id="rent-yacht">
+  <div class="container">
+    <h2 class="section-title">Rent a yacht now</h2>
+    <form class="rent-a-yacht-form">
+      <input
+        class="rent-a-yacht-input"
+        type="text"
+        name="user-name"
+        placeholder="Full Name"
+        pattern="[a-zA-Zа-яА-яіІїЇєЄґҐ]+"
+        required
+      />
+      <input
+        class="rent-a-yacht-input"
+        type="email"
+        name="user-email"
+        placeholder="Email"
+        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        required
+      />
+      <input
+        class="rent-a-yacht-input"
+        type="tel"
+        name="user-phone"
+        placeholder="Phone number"
+        pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+        title="+11-111-111-11-11"
+        required
+      />
+      <textarea
+        class="rent-a-yacht-texterea"
+        name="comment"
+        placeholder="Comment"
+        resize
+      ></textarea>
+      <button class="rent-a-yacht-btn-submit" type="submit">Send</button>
+    </form>
+    <picture>
+      <source
+        srcset="
+          ../img/rent-a-yacht/desktop2/yachtjet@1x.jpg 1x,
+          ../img/rent-a-yacht/desktop2/yachtjet@2x.jpg 2x
+        "
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="
+          ../img/rent-a-yacht/desktop/yachtjet@1x.jpg 1x,
+          ../img/rent-a-yacht/desktop/yachtjet@2x.jpg 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+          ../img/rent-a-yacht/tablet/yachtjet@1x.jpg 1x,
+          ../img/rent-a-yacht/tablet/yachtjet@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        class="rent-a-yacht-img"
+        srcset="../img/rent-a-yacht/mobile/yachtjet@2x.jpg 2x"
+        src="../img/rent-a-yacht/mobile/yachtjet@1x.jpg"
+        alt="Yacht Jet"
+      />
+    </picture>
+  </div>
+</section>

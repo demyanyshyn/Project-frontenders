@@ -1,23 +1,26 @@
 .container {
   padding: 0 16px;
-  min-width: 320px;
-  max-width: 367px;
-  /* width: 1372px; */
   margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .container {
+    min-width: 320px;
+    max-width: 367px;
+  }
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 736px;
+    width: 736px;
   }
 }
 @media (min-width: 1280px) {
   .container {
-    max-width: 1212px;
+    width: 1212px;
   }
 }
 @media (min-width: 1440px) {
   .container {
-    max-width: 1372px;
+    width: 1372px;
   }
 }
 

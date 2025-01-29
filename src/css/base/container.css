@@ -1,7 +1,12 @@
 .container {
   padding: 0 16px;
-  max-width: 367px;
   margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .container {
+    min-width: 320px;
+    max-width: 367px;
+  }
 }
 @media (min-width: 768px) {
   .container {

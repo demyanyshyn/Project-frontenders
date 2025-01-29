@@ -36,6 +36,7 @@ button {
   padding: 0;
   border: none;
   font: inherit;
+  cursor: pointer;
 }
 .visually-hidden {
   position: absolute;

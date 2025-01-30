@@ -1,7 +1,15 @@
 /* header {
-  position: fixed;
-   z-index: 100; 
-}  */
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  margin: 0 auto;
+}
+@media (min-width: 1280px) {
+  header {
+    top: 32px;
+    left: 66px;
+  }
+} */
 
 header .container {
   padding: 20px 16px 0 16px;
@@ -119,9 +127,23 @@ header .container {
   transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header-mess-li-link:active,
 .header-mess-li-link:focus,
 .header-mess-li-link:hover {
   fill: #062730;
+}
+.header-burger-btn-svg {
+  stroke: #062730;
+}
+.header-burger-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .header-burger-btn {
+    display: none;
+  }
 }
 /* ............  Burger      .................................................. */
 

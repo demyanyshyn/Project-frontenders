@@ -9,9 +9,12 @@
 .rent-a-yacht-form {
   margin-bottom: 80px;
 }
-.rent-a-yacht-container-form {
-  width: 335px;
+@media screen and (max-width: 767px) {
+  .rent-a-yacht-container-form {
+    max-width: 335px;
+  }
 }
+
 @media screen and (min-width: 768px) {
   .rent-a-yacht-container-form {
     width: 472px;
@@ -123,7 +126,7 @@
 }
 
 @media (min-width: 1280px) {
-  .container {
+  .rent-a-yacht .container {
     display: flex;
     flex-direction: row-reverse;
     column-gap: 50px;

@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* width: 100%; */
   min-width: 375px;
   min-height: 812px;
   background-image: linear-gradient(
@@ -12,8 +13,8 @@
     ),
     url(/img/hero/hero-mobl1x.jpg);
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  padding: 260px 0 320px 0;
+  background-size: cover;
+  /* padding: 260px 0 320px 0; */
 }
 
 @media (min-resolution: 192dpi) {

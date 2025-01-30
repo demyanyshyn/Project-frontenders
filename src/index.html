@@ -26,28 +26,24 @@
         <load src="./partials/rent-yacht.html" />
         <load src="./partials/reviews.html" />
     </main>
-</body>
-<footer>
     <load src="./partials/footer.html" />
-</footer>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<script>
-    const swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        breakpoints: {
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-            1280: { slidesPerView: 3 },
-            1440: { slidesPerView: 3 },
-        },
-    });
-</script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+                1280: { slidesPerView: 3 },
+                1440: { slidesPerView: 3 },
+            },
+        });
+    </script>
+</body>
 
 </html>

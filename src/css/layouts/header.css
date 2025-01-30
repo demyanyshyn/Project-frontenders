@@ -1,23 +1,35 @@
-/* header {
-  position: absolute;
-  top: 20px;
-  left: 16px;
-  margin: 0 auto;
-}
-@media (min-width: 1280px) {
-  header {
-    top: 32px;
-    left: 66px;
-  }
-} */
 header {
   position: relative;
-  z-index: 100;
 }
-header .container {
+@media (max-width: 767px) {
+  header {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    background-color: transparent;
+  }
+}
+@media (max-width: 767px) {
+  header .container {
+    padding: 0 16px;
+  }
+}
+@media (min-width: 768px) {
+  header .container {
+    padding: 20px 16px 0 16px;
+  }
+}
+
+/* header .container {
   padding: 20px 16px 0 16px;
-  /* padding: 0 16px; */
-}
+   padding: 0 16px; 
+} */
 @media (min-width: 1280px) {
   header .container {
     padding: 32px 66px 0 66px;
@@ -182,7 +194,7 @@ header .container {
   border-radius: 10px;
   background-color: var(--color-aqua);
   transition: all 650ms ease-in-out;
-  z-index: 5;
+  z-index: 55;
 }
 .burger::before {
   content: '';
@@ -212,28 +224,4 @@ header .container {
   width: 80%;
   border-radius: 0;
   height: 1.5px;
-}
-@media (max-width: 768px) {
-  .burger {
-    display: flex;
-  }
-  .header-nav {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 50;
-    overflow-y: auto;
-    padding: 50px 40px;
-    background-color: black;
-  }
-  .nav .header-menu {
-    flex-direction: column;
-    row-gap: 15px;
-  }
 } */

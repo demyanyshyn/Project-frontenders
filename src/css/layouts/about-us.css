@@ -1,5 +1,6 @@
 .about-us-section {
   padding-top: 0;
+  margin-top: -40px;
 }
 .about-us-div-section {
   margin-left: auto;
@@ -35,7 +36,7 @@
   .about-us-div-text {
     display: flex;
     justify-content: space-between;
-    padding: 50px 100px 50px 50px;
+    padding: 50px 50px 50px 50px;
   }
 }
 

@@ -40,17 +40,17 @@
 }
 
 @media (min-width: 768px) {
-  .container {
+  .about-us-section .container {
     min-width: 736px;
   }
 }
 @media (min-width: 1280px) {
-  .container {
+  .about-us-section .container {
     min-width: 1212px;
   }
 }
 @media (min-width: 1440px) {
-  .container {
+  .about-us-section .container {
     min-width: 1372px;
   }
 }
@@ -135,12 +135,13 @@
 @media screen and (min-width: 1280px) {
   .about-us-img {
     width: 1180px;
+    transform: scale(1.002);
   }
 }
 
 @media screen and (min-width: 1440px) {
   .about-us-img {
     width: 1340px;
-    transform: scale(1.001);
+    transform: scaleY(1.003);
   }
 }

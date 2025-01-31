@@ -214,7 +214,7 @@
 .reviews-list-item-back {
   transform: rotateY(180deg);
 
-  background-image: url(../img/reviews/item-bg.jpg);
+  background-image: url(/img/reviews/item-bg.jpg);
   background-position: center;
   background-size: cover;
 
@@ -224,7 +224,7 @@
 
 @media screen and (min-resolution: 192dpi) {
   .reviews-list-item-back {
-    background-image: url(../img/reviews/item-bg@2x.jpg);
+    background-image: url(/img/reviews/item-bg@2x.jpg);
   }
 }
 

@@ -219,3 +219,41 @@
 .footer-privacy {
   display: flex;
 }
+
+.modal-box {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  background-color: var(--color-dark-secondary);
+  pointer-events: none;
+  z-index: 100;
+}
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-box .container {
+  padding: 20px 16px 0 16px;
+  height: 95%;
+  flex-direction: column;
+  display: flex;
+}
+.modal-box .header-container {
+  height: 42px;
+}
+.modal-box .header-menu {
+  max-width: 91px;
+  margin: 0 auto;
+  margin-top: 201px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.social-box-modal .footer-social-list {
+  margin: 0;
+}

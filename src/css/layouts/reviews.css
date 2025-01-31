@@ -100,10 +100,7 @@
     width: 1240px;
   }
 }
-/* .container {
-  display: flex;
-  flex-direction: column;
-} */
+
 .swiper-wrapper {
   display: flex;
 
@@ -128,34 +125,78 @@
   }
 }
 
-.swiper-slide {
-  flex-basis: 335px;
+/* ----------------- reviews-item flip  -----------------*/
+
+.reviews-list-item {
+  perspective: 1000px;
+  cursor: pointer;
+}
+@media screen and (max-width: 374px) {
+  .reviews-list-item {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-list-item {
+    flex-basis: 336px;
+    margin-right: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reviews-list-item {
+    flex-basis: 376px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reviews-list-item {
+    flex-basis: 392px;
+  }
+}
+
+.reviews-list-item-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  transform-style: preserve-3d;
+  transition: 500ms transform cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reviews-list-item-front,
+.reviews-list-item-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+  border-radius: 24px;
+}
+
+.reviews-list-item-front {
   padding: 32px 16px;
   text-align: center;
   background-color: var(--color-white);
-  border-radius: 24px;
-
-  cursor: pointer;
 }
 
 @media screen and (max-width: 374px) {
-  .swiper-slide {
+  .reviews-list-item-front {
     flex-basis: 100%;
     overflow: scroll;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .swiper-slide {
-    flex-basis: 336px;
-    margin-right: 0 !important;
+  .reviews-list-item-front {
     padding-right: 20px;
     padding-left: 20px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .swiper-slide {
+  .reviews-list-item-front {
     flex-basis: 376px;
     padding-left: 28px;
     padding-right: 28px;
@@ -163,9 +204,30 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .swiper-slide {
+  .reviews-list-item-front {
     flex-basis: 392px;
     padding-left: 36px;
     padding-right: 36px;
   }
+}
+
+.reviews-list-item-back {
+  transform: rotateY(180deg);
+
+  background-image: url(../img/reviews/item-bg.jpg);
+  background-position: center;
+  background-size: cover;
+
+  box-shadow: inset 0 0 10px rgba(0, 255, 200, 0.5),
+    inset 0 0 18px rgba(0, 180, 255, 0.4), inset 0 0 25px rgba(255, 140, 0, 0.3);
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .reviews-list-item-back {
+    background-image: url(../img/reviews/item-bg@2x.jpg);
+  }
+}
+
+.reviews-list-item:hover .reviews-list-item-wrap {
+  transform: rotateY(180deg);
 }

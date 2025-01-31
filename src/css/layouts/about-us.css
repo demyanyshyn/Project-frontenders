@@ -1,8 +1,8 @@
-.about-us-section {
+.about-us {
   padding-top: 0;
   margin-top: -40px;
 }
-.about-us-div-section {
+.about-us-wrap {
   margin-left: auto;
   margin-right: auto;
   max-width: 335px;
@@ -10,48 +10,48 @@
   border-radius: 24px;
 }
 @media screen and (min-width: 768px) {
-  .about-us-div-section {
+  .about-us-wrap {
     max-width: 704px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .about-us-div-section {
+  .about-us-wrap {
     max-width: 1180px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .about-us-div-section {
+  .about-us-wrap {
     max-width: 1340px;
   }
 }
-.about-us-div-text {
-  padding: 40px 20px 40px 20px;
+.about-us-info {
+  padding: 40px 20px;
 }
 @media screen and (min-width: 768px) {
-  .about-us-div-text {
+  .about-us-info {
     padding: 50px 136px 50px 32px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .about-us-div-text {
+  .about-us-info {
     display: flex;
     justify-content: space-between;
-    padding: 50px 50px 50px 50px;
+    padding: 50px;
   }
 }
 
 @media (min-width: 768px) {
-  .about-us-section .container {
+  .about-us .container {
     min-width: 736px;
   }
 }
 @media (min-width: 1280px) {
-  .about-us-section .container {
+  .about-us .container {
     min-width: 1212px;
   }
 }
 @media (min-width: 1440px) {
-  .about-us-section .container {
+  .about-us .container {
     min-width: 1372px;
   }
 }
@@ -75,17 +75,17 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about-us-div-trans {
+  .about-us-content {
     max-width: 389px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .about-us-div-trans {
+  .about-us-content {
     max-width: 354px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .about-us-div-trans {
+  .about-us-content {
     max-width: 404px;
   }
 }
@@ -101,8 +101,7 @@
     letter-spacing: 0.02em;
   }
 }
-
-.about-us-trans {
+.about-us-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -111,38 +110,36 @@
   opacity: 0.4;
 }
 @media screen and (min-width: 768px) {
-  .about-us-trans {
+  .about-us-text {
     font-size: 13px;
     line-height: 1.15;
   }
 }
 @media screen and (min-width: 1440px) {
-  .about-us-trans {
+  .about-us-text {
     letter-spacing: 0.015em;
   }
 }
 .about-us-img {
   border-radius: 21px;
   object-fit: cover;
-  height: 395px;
   width: 335px;
+  transform: scale(1.002);
 }
 @media screen and (min-width: 768px) {
   .about-us-img {
-    height: 470px;
     width: 704px;
+    transform: scale(1.003);
   }
 }
 @media screen and (min-width: 1280px) {
   .about-us-img {
     width: 1180px;
-    transform: scale(1.002);
   }
 }
 
 @media screen and (min-width: 1440px) {
   .about-us-img {
     width: 1340px;
-    transform: scaleY(1.003);
   }
 }

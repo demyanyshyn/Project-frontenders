@@ -1,40 +1,30 @@
 .footer {
-  margin: auto auto auto 0;
+  margin: 0 auto;
   padding: 0 10px;
   width: 100%;
-  /* min-width: 375px; */
-  margin: 0 auto;
+  min-width: 320px;
 }
-@media screen and (max-width: 767px) {
-  .footer {
-    max-width: 355px;
-  }
-}
+
 @media screen and (min-width: 768px) {
   .footer {
-    /* min-width: 768px;
-    max-width: 1280px; */
-    width: 736px;
+    min-width: 736px;
     padding: 0 16px;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer {
     min-width: 1280px;
-    max-width: 1440px;
     padding: 0 25px;
   }
 }
 @media screen and (min-width: 1440px) {
   .footer {
     min-width: 1440px;
-    max-width: none;
   }
 }
 .footer-container {
   width: 100%;
-  min-width: 355px;
-  max-width: 747px;
+  min-width: 300px;
   margin: 0 auto;
   padding: 40px 30px 20px 30px;
 
@@ -50,28 +40,27 @@
 @media screen and (min-width: 768px) {
   .footer-container {
     padding: 50px 48px 20px 48px;
-    min-width: 736px;
     max-width: 736px;
+
     flex-direction: row;
     column-gap: 91px;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer-container {
-    min-width: 1230px;
     max-width: 1230px;
+
     padding: 50px 75px 20px 75px;
   }
 }
 @media screen and (min-width: 1440px) {
   .footer-container {
-    min-width: 1390px;
     max-width: 1390px;
   }
 }
 .footer-nav-wrapper {
   width: 100%;
-
+  min-width: 240px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -81,12 +70,23 @@
 @media screen and (min-width: 768px) {
   .footer-nav-wrapper {
     width: 100%;
+    min-width: 640px;
     justify-content: space-between;
   }
 }
-
+@media screen and (min-width: 1280px) {
+  .footer-nav-wrapper {
+    min-width: 1080px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer-nav-wrapper {
+    min-width: 1240px;
+  }
+}
 .footer-logo {
   display: inline-flex;
+  margin-bottom: 15px;
 
   font-weight: 500;
   font-size: 14px;
@@ -178,9 +178,10 @@
 }
 
 .footer-paragraph {
-  width: 262px;
+  max-width: 262px;
+  min-width: 240px;
+  margin: 40px auto 82px auto;
 
-  /* margin: 40px auto 82px auto; */
   font-weight: 400;
   font-size: 18px;
   line-height: 1;
@@ -190,8 +191,8 @@
 }
 @media screen and (min-width: 768px) {
   .footer-paragraph {
-    width: 518px;
-    margin: 186px auto 99px auto;
+    max-width: 518px;
+    margin: 96px auto 99px auto;
 
     font-weight: 400;
     font-size: 32px;
@@ -201,6 +202,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 
   font-weight: 400;

@@ -15,7 +15,7 @@
   border-radius: 24px;
 }
 @media (max-width: 767px) {
-  .our-yachts-item {
+  src\img\img-yacht-1-mob.jpg .our-yachts-item {
     max-width: 334px;
   }
 }

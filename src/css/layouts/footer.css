@@ -222,5 +222,6 @@
   display: flex;
 }
 .footer-privacy {
+  color: rgba(251, 251, 251, 0.4);
   display: flex;
 }

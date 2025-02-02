@@ -15,7 +15,14 @@
   /* margin: 40px 0; */
   padding: 16px;
   border-radius: 24px;
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.our-yachts-item:hover,
+.our-yachts-item:focus,
+.our-yachts-item:active {
+  transform: scale(1.07);
+}
+
 @media (max-width: 767px) {
   .our-yachts-item {
     max-width: 334px;

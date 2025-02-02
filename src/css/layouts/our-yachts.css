@@ -163,12 +163,9 @@
     max-width: 336px;
     max-height: 508px;
     width: calc((100% - 32px) / 2);
-    /* text-shadow: 0 0 black; */
     cursor: pointer;
   }
-  .our-yachts-item:hover {
-    /* text-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5); */
-  }
+
   .our-yachts-img {
     width: 304px;
     height: 268px;
@@ -259,4 +256,3 @@
   }
 }
 
-/* #endregion for Desktop-2 */

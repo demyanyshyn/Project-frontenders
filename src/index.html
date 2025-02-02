@@ -53,19 +53,21 @@
         },
       });
 
-      const reviewsList = document.querySelector('.reviews-list');
+      const reviews = document.querySelectorAll('.reviews-list-item');
 
-      reviewsList.addEventListener('click', e => {
-        const wrap = e.target.closest('.reviews-list-item-wrap');
-        const saveBtn = wrap.querySelector('.reviews-save-btn');
+      reviews.forEach(review => {
+        review.addEventListener('mouseenter', e => {
+          const wrap = e.currentTarget.querySelector('.reviews-list-item-wrap');
+          const saveBtn = e.currentTarget.querySelector('.reviews-save-btn');
 
-        saveBtn.addEventListener('click', () => {
-          const reviewText =
-            wrap.querySelector('.reviews-list-text').textContent;
-          console.log(reviewText);
+          saveBtn.addEventListener('click', () => {
+            const reviewText =
+              wrap.querySelector('.reviews-list-text').textContent;
+            console.log(reviewText);
 
-          saveBtn.textContent = 'Copied!';
-          saveBtn.disabled = true;
+            saveBtn.textContent = 'Copied!';
+            saveBtn.disabled = true;
+          });
         });
       });
     </script>

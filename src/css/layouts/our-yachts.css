@@ -22,11 +22,6 @@
   transform: scale(1.07);
 }
 
-@media (max-width: 767px) {
-  .our-yachts-item {
-    max-width: 334px;
-  }
-}
 .second-yacht {
   display: none;
 }
@@ -132,9 +127,13 @@
 .our-yachts-list {
   margin: 40px 0 40px 0;
 }
+@media (max-width: 767px) {
+  .our-yachts-item {
+    max-width: 334px;
+  }
+}
 
 /* #region for Tablet */
-
 @media screen and (min-width: 768px) {
   .our-yachts-title {
     font-size: 48px;
@@ -255,4 +254,3 @@
     width: 35%;
   }
 }
-

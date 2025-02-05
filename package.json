@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-frontenders/",
+    "build": "vite build --base=/bc_74_urbanIllia/",
     "preview": "vite preview"
   },
   "devDependencies": {

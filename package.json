@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Project-frontenders/",
+    "build": "vite build --base=/project-frontenders/",
     "preview": "vite preview"
   },
   "devDependencies": {
